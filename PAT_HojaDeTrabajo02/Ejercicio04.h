@@ -1,6 +1,15 @@
 #pragma once
+
+#include "Node.h"
+
 class FrontMiddleBackQueue
 {
+private:
+    Node<int>* head;
+    Node<int>* tail;
+
+	bool isEmpty();
+
 public:
 	FrontMiddleBackQueue();
 
@@ -16,4 +25,3 @@ public:
 
 	int popBack();
 };
-
